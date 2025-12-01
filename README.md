@@ -1,3 +1,5 @@
 Solutions by Dias Dauletov for https://adventofcode.com/2025
 
-Learning Python by solving these problems :) 
+I am learning Python by solving these problems :) 
+
+![Python](python_logo.png)
