@@ -4,7 +4,7 @@ import functools
 
 
 # F(I, K) - finds a sequence of numbers with lenth K in an array A that forms maximum number,
-# e.g. A = [9, 1, 9, 8], I = 3, K = 2 then F(I, K) = 18
+# e.g. A = [9, 1, 9, 8], I = 2, K = 2 then F(I, K) = 18 
 # A contains only digits,  0 <= I, K < len(A)
 #
 # Solution: F(I, K) = max(F(I - 1, K - 1) + A[I], F(I - 1, K))
