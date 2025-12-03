@@ -7,7 +7,7 @@ import functools
 # e.g. A = [9, 1, 9, 8], I = 2, K = 2 then F(I, K) = 99 
 # A contains only digits,  0 <= I, K < len(A)
 #
-# Solution: F(I, K) = max(F(I - 1, K - 1) + A[I], F(I - 1, K))
+# Solution: F(I, K) = max(F(I - 1, K - 1) * 10 + A[I], F(I - 1, K))
 #
 # In the implementation below: F = find_max_joltages, I = cur_joltage_pos, K = joltages_len, A = banks[bank_index].
 
