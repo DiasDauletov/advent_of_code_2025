@@ -2,6 +2,15 @@
 import sys
 import functools
 
+
+# F(I, K) - finds a sequence of numbers with lenth K in an array A that forms maximum number,
+# e.g. A = [9, 1, 9, 8], I = 3, K = 2 then F(I, K) = 18
+# A contains only digits,  0 <= I, K < len(A)
+#
+# Solution: F(I, K) = max(F(I - 1, K - 1) + A[I], F(I - 1, K))
+#
+# In the implementation below: F = find_max_joltages, I = cur_joltage_pos, K = joltages_len, A = banks[bank_index].
+
 banks = [[int(digit) for digit in line.rstrip('\n')] for line in sys.stdin]
 
 @functools.cache
