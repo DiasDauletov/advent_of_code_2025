@@ -3,8 +3,8 @@ import sys
 import functools
 
 
-# F(I, K) - finds a sequence of numbers with lenth K in an array A that forms maximum number,
-# e.g. A = [9, 1, 9, 8], I = 2, K = 2 then F(I, K) = 18 
+# F(I, K) - finds a maximum number with lenth K that can be formed from an array A[0...I],
+# e.g. A = [9, 1, 9, 8], I = 2, K = 2 then F(I, K) = 99 
 # A contains only digits,  0 <= I, K < len(A)
 #
 # Solution: F(I, K) = max(F(I - 1, K - 1) + A[I], F(I - 1, K))
